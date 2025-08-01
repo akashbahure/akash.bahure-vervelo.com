@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DevZone - Elevate Your Skills</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">DevZone</div>
+    <ul class="nav-links">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Master Web Development</h1>
+      <p>Build real-world projects and upgrade your coding skills from beginner to pro.</p>
+      <button onclick="joinNow()">Join Now</button>
+    </div>
+  </header>
+
+  <section id="features" class="features">
+    <h2>Why Choose Us?</h2>
+    <div class="feature-cards">
+      <div class="card">
+        <h3>💡 Project-Based</h3>
+        <p>Learn by building practical projects in real time.</p>
+      </div>
+      <div class="card">
+        <h3>🧠 Expert Mentors</h3>
+        <p>Get guidance from industry professionals and experts.</p>
+      </div>
+      <div class="card">
+        <h3>⚙️ Tools & Resources</h3>
+        <p>Access to free tools, templates, and code snippets.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About DevZone</h2>
+    <p>DevZone is an online learning platform that focuses on practical knowledge. We believe in hands-on experience and build confidence through doing, not just watching.</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Get in Touch</h2>
+    <form onsubmit="return submitForm(event)">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="form-status"></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 DevZone. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
