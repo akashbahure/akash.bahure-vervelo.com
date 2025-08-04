@@ -1,5 +1,5 @@
 function joinNow() {
-    alert("Thanks for joining DevZone! 🚀");
+    alert("Thanks for joining DevZone!");
   }
   
   function submitForm(event) {
