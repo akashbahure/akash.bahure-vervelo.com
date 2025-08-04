@@ -71,7 +71,7 @@ git restore filename
 #Removes the file from the staging area but keeps local changes.
 git restore --staged filename
 
-#Discard all local changes and reset completely (⚠️ irreversible)
+#Discard all local changes and reset completely (irreversible)
 git reset --hard
 
 
@@ -81,3 +81,18 @@ git reset --hard
 node_modules/
 .env
 *.log
+
+
+# You're working on 'task' branch
+git status
+# You made changes, but want to switch branch safely
+
+git stash
+# Now working directory is clean
+
+git checkout main
+# Pull updates, fix something, etc.
+
+git checkout task
+git stash pop
+# Changes restored to your working directory
